@@ -1,7 +1,7 @@
 <?php
 include_once "Humain.php"
 
-class Gradouble extends Humain{
+class Gradouble extends Humain implements Mechant{
 
 
     public function __construct() {
@@ -10,6 +10,7 @@ class Gradouble extends Humain{
         $this->life = 200;
         $this->damage = 2;
         echo "<pre>Le sol tremble... C'est gradouble ! $name.</pre> ";
+        
     }
 
     

@@ -12,6 +12,7 @@
         include('Denfer.php');
         include('Austin.php');
         include_once('Humain.php');
+        
         // calling the magic public method __construct
         $denfer = new Denfer();
         $austin = new Austin();
