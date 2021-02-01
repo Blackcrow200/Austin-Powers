@@ -1,6 +1,6 @@
 <?php
 include_once "Humain.php";
-class Austin  extends Humain {
+class Austin  extends Humain implements Gentil {
     public function __construct() {
         $this->name = "Austin";
         $this->life = 100;
@@ -16,5 +16,11 @@ class Austin  extends Humain {
 
     public function __toString() {
         return "Hero - $this->name [life=$this->life , damage=$this->damage]";
+    }
+
+    public function isHit($Ennemi) {
+        $this->parle("Ouch! You've hurt me !");
+        $this->life = $this->life - $Ennemi->damage;
+
     }
 }
