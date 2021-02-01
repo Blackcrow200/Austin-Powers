@@ -1,23 +1,24 @@
 <?php
-class Hero {
+class Austin  extends Humain {
     public function __construct() {
-        echo "<pre>Creation of a Hero called $name.</pre> ";
         $this->name = "Austin";
         $this->life = 100;
         $this->damage = 10;
+        $this->mojo = 100;
+        echo "<pre>Creation of a Hero called  $this->name.</pre> ";
     }
-    public function talk($message = 'Salut Chérie') {
-        echo ($this->name).":".$message."</pre><br />";
+
+    public function isHit($Enemie) {
+        $this->talk("Ouch! I'm hurt !");
+        $this->life = $this->life - $Enemie->damage;
     }
-    public function attack($monster) {
-        $this->talk("Prend ça, suppot de Dr Denfer ! $monster->name");
-        $monster->isHit($this);
+
+    public function attack($Enemie) {
+        $this->parle("Je vous arrï¿½te, ->name");
+        $Enemie->isHit($this);
     }
+
     public function __toString() {
         return "Hero - $this->name [life=$this->life , damage=$this->damage]";
-    }
-    public function isHit($monster) {
-        $this->talk("Aïe, j'ai mal !");
-        $this->life = $this->life - $monster->damage;
     }
 }

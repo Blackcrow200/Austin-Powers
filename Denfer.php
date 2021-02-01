@@ -1,30 +1,25 @@
 <?php
-class Monster {
+class Denfer extends Humain{
 
-    public function __construct($name) {
-        echo "<pre>Creation of a Monster called $name.</pre> ";
-        $this->name = $name;
+
+    public function __construct() {
+        $this->name = 'denfer';
         $this->life = 100;
-        $this->damage = 2;
-    }
-    public function talk($message) {
-        echo "<pre>".strtoupper($this->name).": $message </pre><br />";
+        $this->damage = 20;
+        echo "<pre>Creation of a Monster called $this->name.</pre> ";
     }
     
-    public function isHit($hero) {
+    public function isHit($Enemie) {
         $this->talk("Ouch! You've hurt me !");
-        $this->life = $this->life - $hero->damage;
-        
-        // Hit back
-        $this->attack($hero);
+        $this->life = $this->life - $Enermie->damage;
     }
 
-    public function attack($hero) {
+    public function attack($Enemie) {
         $this->talk("I'll ruin you!! Feel my wrath !!");
-        $hero->isHit($this);
+        $Austin->isHit($this);
     }
 
     public function __toString() {
-        return "Monster - $this->name [life=$this->life , damage=$this->damage]";
+        return "Denfer - $this->name [life=$this->life , damage=$this->damage]";
     }
 }
