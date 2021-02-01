@@ -24,5 +24,4 @@ class FemBot extends Humain implements Mechant{
     public function __toString() {
         return "Monster - $this->name [life=$this->life , damage=$this->damage]";
     }
-}
->>>>>>> Stashed changes
+
