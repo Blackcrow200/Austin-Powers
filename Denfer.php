@@ -1,6 +1,6 @@
 <?php
 include_once "Humain.php";
-class Denfer extends Humain{
+class Denfer extends Humain {
     public function __construct() {
         $this->name = 'denfer';
         $this->life = 100;
