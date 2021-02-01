@@ -10,7 +10,7 @@
     <?php
 
         include('monster.php');
-        include('hero.php');
+        include('Austin.php');
 
        
         echo "Loading the world of objects.... <br/>";
