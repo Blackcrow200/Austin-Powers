@@ -1,4 +1,5 @@
 <?php
+include_once "Humain.php";
 class Austin  extends Humain {
     public function __construct() {
         $this->name = "Austin";
@@ -8,14 +9,9 @@ class Austin  extends Humain {
         echo "<pre>Creation of a Hero called  $this->name.</pre> ";
     }
 
-    public function isHit($Enemie) {
-        $this->talk("Ouch! I'm hurt !");
-        $this->life = $this->life - $Enemie->damage;
-    }
-
-    public function attack($Enemie) {
-        $this->parle("Je vous arr�te, ->name");
-        $Enemie->isHit($this);
+    public function attaque($Ennemi) {
+        $this->parle("Je vous arrête, ->name");
+        $Ennemi->isHit($this);
     }
 
     public function __toString() {
