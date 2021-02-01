@@ -11,6 +11,7 @@
 
         include('monster.php');
         include('Austin.php');
+<<<<<<< Updated upstream
 
        
         echo "Loading the world of objects.... <br/>";
@@ -19,6 +20,10 @@
         echo "Now, it could be great to fathom a great story and all. But I believe we are here to talk about coding and objects and stuff. <br/> Anyhow, every story starts with a Hero <br/> So.. let's make this short <br />";
         echo "and.. Let's create our Hero <br/><br />";
 
+=======
+        include_once('Humain.php');
+        
+>>>>>>> Stashed changes
         // calling the magic public method __construct
         $granny = new Hero('Granny Weatherwax');
         $cat = new Hero('Granny\'s cat');
