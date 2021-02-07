@@ -1,15 +1,11 @@
 <?php
 include_once "Humain.php";
-<<<<<<< HEAD
-class Denfer extends Humain {
-=======
 class Denfer extends Humain{
->>>>>>> Arthur
     public function __construct() {
         $this->name = 'denfer';
         $this->life = 100;
         $this->damage = 20;
-        echo "<pre>Creation of a Monster called $this->name.</pre> ";
+        echo "<pre>Mouahahahah...   Mouahahahahahah ! JE SUIS LE DOCTEUR DENFER !</pre> ";
     }
 
     public function attaque($Ennemi) {
