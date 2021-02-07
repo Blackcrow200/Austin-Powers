@@ -1,6 +1,6 @@
 <?php
 include_once "Humain.php";
-class Denfer extends Humain implements Mechant{
+class Denfer extends Humain{
     public function __construct() {
         $this->name = 'denfer';
         $this->life = 100;
@@ -21,6 +21,6 @@ class Denfer extends Humain implements Mechant{
         $this->parle("Oh lala... je suis \"blessé\"... C'est crispant...");
         $this->life = $this->life - $Ennemi->damage;
         //Auto riposte
-        this->attaque($Ennemi);
+        $this->attaque($Ennemi);
     }
 }
